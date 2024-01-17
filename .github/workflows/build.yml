@@ -35,8 +35,8 @@ jobs:
           git remote add upstream https://github.com/SATIS8CHIMPALEE/Bootstrap
           git fetch upstream
           git fetch --all --prune
-          git pull --rebase --strategy-option=theirs upstream F_th-TH
-          git checkout --track origin/F_th-TH
+          git pull --rebase --strategy-option=theirs upstream main
+          
 
       - name: Install Homebrew
         run: bash -c "$(curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh')"
