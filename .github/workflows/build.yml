@@ -2,7 +2,7 @@ name: Build and Package
 
 on:
   push:
-    branches: [ "F_th-TH" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "F_th-TH" ]
   workflow_dispatch:
