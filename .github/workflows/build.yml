@@ -1,22 +1,32 @@
-name: Build and Package
+name: Build roothide Bootstrap .tipa
 
 on:
   push:
-    branches: [ "main" ]
+    paths:
+      - ".github/workflows/build.yml"
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
   build:
-    name: Build Bootstrap
+    name: Build roothide Bootstrap .tipa
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
+      - name: Validate repository
+        run: |
+          REPO=${{ github.repository }}
+  
+          if [ "$REPO" != "SATIS8CHIMPALEE/Bootstrap" ]; then
+            echo "This workflow is only permitted usage for SATIS8CHIMPALEE/Bootstrap repository. Exiting."
+            exit 1
+          fi
+
+      - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          submodules: true
 
       - name: Fetch from upstream repository SATIS8CHIMPALEE/Bootstrap
         run: |
