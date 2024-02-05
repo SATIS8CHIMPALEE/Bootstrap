@@ -184,6 +184,8 @@ void respringAction()
     NSString* err=nil;
     int status = spawnBootstrap((char*[]){"/usr/bin/sbreload", NULL}, &log, &err);
     if(status!=0) [AppDelegate showMesage:[NSString stringWithFormat:@"%@\n\nstderr:\n%@",log,err] title:[NSString stringWithFormat:@"code(%d)",status]];
+    [AppDelegate dismissHud];
+    });
 }
 
 void rebuildappsAction()
