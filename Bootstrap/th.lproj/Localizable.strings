@@ -74,4 +74,4 @@
 "app-version: %@" = "เวอร์ชั่นของแอป: %@";
 "boot-session: %@" = "เซสชั่นการบูต: %@";
 "UI made with love by haxi0. ♡" = "UI ที่สร้างด้วยความรักโดย haxi0. ♡";
-"Reset Mobile Password" = "รีเซตรหัสผ่าน";
+"Reset Mobile Password" = "รีเซตรหัส(mobile)";
