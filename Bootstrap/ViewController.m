@@ -109,21 +109,15 @@ void initFromSwiftUI()
             IconCacheRebuilding = YES;
         }
     }
-    usleep(200000);
+    usleep(500000);
     [AppDelegate addLogText:[NSString stringWithFormat:Localized(@"ios-version: %@"),UIDevice.currentDevice.systemVersion]];
-    usleep(200000);
     struct utsname systemInfo;
     uname(&systemInfo);
     [AppDelegate addLogText:[NSString stringWithFormat:Localized(@"device-model: %s"),systemInfo.machine]];
-    usleep(200000);
     [AppDelegate addLogText:[NSString stringWithFormat:Localized(@"app-version: %@"),NSBundle.mainBundle.infoDictionary[@"CFBundleShortVersionString"]]];
-    usleep(200000);
     [AppDelegate addLogText:[NSString stringWithFormat:Localized(@"boot-session: %@"),getBootSession()]];
-    usleep(200000);
     [AppDelegate addLogText: isBootstrapInstalled()? Localized(@"bootstrap installed"):Localized(@"bootstrap not installed")];
-    usleep(200000);
     [AppDelegate addLogText: isSystemBootstrapped()? Localized(@"system bootstrapped"):Localized(@"system not bootstrapped")];
-    usleep(200000);
 
     SYSLOG("locale=%@", NSLocale.currentLocale.countryCode);
     SYSLOG("locale=%@", [NSUserDefaults.appDefaults valueForKey:@"locale"]);
