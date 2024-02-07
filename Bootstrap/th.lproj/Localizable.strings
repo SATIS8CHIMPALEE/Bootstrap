@@ -25,7 +25,7 @@
 "bootstrap uninstalled" = "ถอน Bootstrap แล้ว";
 
 "Enable Tweak for App" = "เปิดการใช้งาน Tweak บนแอป";
-"name or identifier" = "ชื่อ หรือ id ของแอป";
+"name or identifier" = "ค้นหา ชื่อ หรือ บันเดิล id ของแอป";
 
 "Server Not Running" = "เซิร์ฟเวอร์ไม่ได้ทำงานอยู่";
 
@@ -76,3 +76,4 @@
 "UI made with love by haxi0. ♡" = "UI ที่สร้างด้วยความรักโดย haxi0. ♡";
 "Reset Mobile Password" = "รีเซตรหัส (mobile)";
 "Set the mobile password of your device, this can also be used for root access using sudo. If you want to set the root password, you can do so from a mobile shell using \"sudo passwd root\"" = "ตั้งค่ารหัสผ่านสำหรับอุปกรณ์ของคุณ, ซึ่งเพื่อการสามารถเข้าถึงรูทโดยใช้ sudo ได้. หากคุณต้องการตั้งรหัสผ่านรูท, คุณสามารถทำได้จากเชลล์บนเครื่องโดยใช้ \"sudo passwd root\"";
+"Confirm" = "ยืนยัน";
