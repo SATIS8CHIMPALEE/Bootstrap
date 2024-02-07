@@ -74,4 +74,5 @@
 "app-version: %@" = "เวอร์ชั่นของแอป: %@";
 "boot-session: %@" = "เซสชั่นการบูต: %@";
 "UI made with love by haxi0. ♡" = "UI ที่สร้างด้วยความรักโดย haxi0. ♡";
-"Reset Mobile Password" = "รีเซตรหัส(mobile)";
+"Reset Mobile Password" = "รีเซตรหัส (mobile)";
+"Set the mobile password of your device, this can also be used for root access using sudo. If you want to set the root password, you can do so from a mobile shell using \"sudo passwd root\"" = "ตั้งค่ารหัสผ่านสำหรับอุปกรณ์ของคุณ, ซึ่งเพื่อการสามารถเข้าถึงรูทโดยใช้ sudo ได้. หากคุณต้องการตั้งรหัสผ่านรูท, คุณสามารถทำได้จากเชลล์บนเครื่องโดยใช้ \"sudo passwd root\"";
